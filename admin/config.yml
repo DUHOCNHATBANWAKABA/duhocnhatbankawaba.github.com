@@ -16,9 +16,3 @@ collections:
         fields:
           - {label: "Tiêu đề", name: "title", widget: "string"}
           - {label: "Nội dung", name: "body", widget: "markdown"}
-      - file: "introl.html"
-        label: "Giới thiệu"
-        name: "intro"
-        fields:
-          - {label: "Tiêu đề", name: "title", widget: "string"}
-          - {label: "Nội dung", name: "body", widget: "markdown"}
