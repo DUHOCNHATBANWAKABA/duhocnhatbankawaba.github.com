@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: DUHOCHNATBANWAKABA/wakaba
+  name: git-gateway
   branch: main
 
   # Thêm thông tin OAuth App
