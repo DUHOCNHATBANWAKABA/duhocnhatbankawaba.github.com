@@ -3,321 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WAKABA - DU HỌC NHẬT BẢN</title>
+    <title>WAKABA - Du học Nhật Bản</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        vnpcRed: '#E82127',
-                        vnpcDark: '#1A1A1A',
-                        vnpcBlue: '#0F52BA',
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'system-ui', 'sans-serif'],
-                    },
-                }
-            }
-        }
-    </script>
 </head>
-<body class="font-sans">
-    <!-- Header Top Bar -->
-    <header class="bg-vnpcDark text-white">
-        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
-            <!-- Logo WAKABA -->
-            <div class="flex items-center gap-3">
-                <div class="flex items-center">
-                    <div class="w-10 h-10 relative">
-                        <div class="absolute left-0 bottom-0 w-7 h-7 bg-vnpcRed rounded-full"></div>
-                        <div class="absolute right-0 top-0 w-6 h-6 bg-blue-500 rounded-full"></div>
-                    </div>
-                    <div class="ml-2">
-                        <h1 class="text-xl font-bold">WAKABA</h1>
-                        <p class="text-xs text-gray-400">Overseas Study & More</p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Search Bar -->
-            <div class="hidden md:flex flex-1 max-w-md mx-8">
-                <input type="text" placeholder="Nhập từ khoá" class="w-full px-4 py-2 rounded-sm focus:outline-none text-gray-700">
-                <button class="bg-transparent px-3">
-                    <i class="fa-solid fa-magnifying-glass text-gray-400"></i>
-                </button>
-            </div>
+<body class="bg-gray-100 font-sans">
 
-            <!-- Top Menu -->
-            <nav class="hidden md:flex items-center gap-8">
-                <a href="#" class="hover:text-vnpcRed transition-colors">SỰ KIỆN</a>
-                <a href="#" class="hover:text-vnpcRed transition-colors">ĐĂNG KÝ</a>
-                <a href="#" class="hover:text-vnpcRed transition-colors">TUYỂN DỤNG</a>
-                <a href="#" class="hover:text-vnpcRed transition-colors">LIÊN HỆ</a>
-            </nav>
+<!-- HEADER -->
+<header class="bg-red-600 text-white py-4 text-center shadow">
+    <h1 class="text-2xl font-bold">WAKABA</h1>
+    <p class="text-sm">Du học Nhật Bản</p>
+</header>
 
-            <!-- Mobile Menu -->
-            <button class="md:hidden text-xl">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+<!-- NAV -->
+<nav class="bg-black text-white flex justify-center gap-6 py-3">
+    <a href="#gioi-thieu" class="hover:text-red-400">Giới thiệu</a>
+    <a href="#chuong-trinh" class="hover:text-red-400">Chương trình</a>
+    <a href="#lien-he" class="hover:text-red-400">Liên hệ</a>
+    <a href="#hinh-anh" class="hover:text-red-400">Hình ảnh</a>
+</nav>
+
+<!-- CONTAINER -->
+<div class="max-w-5xl mx-auto p-6 space-y-10">
+
+    <!-- GIỚI THIỆU -->
+    <section id="gioi-thieu">
+        <h2 class="bg-white border-l-4 border-red-500 p-3 text-xl font-bold shadow mb-4">
+            Giới thiệu
+        </h2>
+
+        <p class="mb-4 text-gray-700">
+            Wakaba là trung tâm tư vấn du học Nhật Bản uy tín, giúp học sinh và sinh viên Việt Nam tiếp cận nền giáo dục hiện đại.
+        </p>
+
+        <div class="flex flex-col items-center gap-6">
+            <figure class="text-center">
+                <img src="TV03.jpg" class="w-[400px] rounded shadow hover:scale-105 transition">
+                <figcaption class="text-sm mt-2">Tư vấn du học</figcaption>
+            </figure>
+
+            <figure class="text-center">
+                <img src="TV04.png" class="w-[600px] rounded shadow hover:scale-105 transition">
+                <figcaption class="text-sm mt-2">Học bổng</figcaption>
+            </figure>
         </div>
-    </header>
-
-    <!-- Main Navigation Bar -->
-    <nav class="bg-WAKABARed text-white">
-        <div class="container mx-auto px-4">
-            <ul class="flex overflow-x-auto py-3 gap-6 md:gap-8 items-center">
-                <li class="flex items-center">
-                    <i class="fa-solid fa-house mr-2"></i>
-                </li>
-                <li><a href="#" class="whitespace-nowrap hover:underline">GIỚI THIỆU</a></li>
-                <li><a href="#" class="whitespace-nowrap hover:underline">DU HỌC</a></li>
-                <li><a href="#" class="whitespace-nowrap hover:underline">HỌC BỔNG</a></li>
-                <li><a href="#" class="whitespace-nowrap hover:underline">DỊCH VỤ</a></li>
-                <li><a href="#" class="whitespace-nowrap hover:underline">TÌM TRƯỜNG</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Banner Sự kiện HTMi Thụy Sĩ -->
-    <section class="relative bg-white overflow-hidden">
-        <!-- Nền trang trí -->
-        <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-white z-0">
-            <img src="02.png" alt="Nền văn phòng học viện" class="w-full h-full object-cover opacity-40">
-        </div>
-
-        <div class="container mx-auto px-6 py-12 relative z-10">
-            <div class="flex flex-col lg:flex-row gap-10 items-start">
-                <!-- Cột bên trái: Thông tin sự kiện -->
-                <div class="w-full lg:w-1/2 space-y-6">
-                    <!-- Tiêu đề chính -->
-                    <div class="space-y-2">
-                        <h2 class="text-[clamp(1.75rem,4vw,2.5rem)] italic text-blue-800">LIÊN HỆ</h2>
-                        <p class="text-[clamp(1.5rem,3vw,2.25rem)] font-bold text-vnpcRed">CÔNG TY DU HỌC WAKABA</p>
-                    </div>
-
-                    <!-- Danh sách ưu đãi -->
-                    <ul class="space-y-3">
-                        <li class="flex items-start gap-3">
-                            <i class="fa-solid fa-circle-check text-blue-600 mt-1 flex-shrink-0"></i>
-                            <span># Đậu visa 100%</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fa-solid fa-circle-check text-blue-600 mt-1 flex-shrink-0"></i>
-                            <span>Học bổng toàn phần</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fa-solid fa-circle-check text-blue-600 mt-1 flex-shrink-0"></i>
-                            <span> vừa học vừa làm </span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fa-solid fa-circle-check text-blue-600 mt-1 flex-shrink-0"></i>
-                            <span>UY TÍN - TRÁCH NHIỆM - TÂN TÂM</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fa-solid fa-circle-check text-blue-600 mt-1 flex-shrink-0"></i>
-                            <span>TƯ VẤN MIỄN PHÍ</span>
-                    </ul>
-
-                    <!-- Thông tin thời gian & địa điểm -->
-                    <div class="space-y-4 pt-4">
-                        <div class="bg-vnpcRed text-white inline-block px-4 py-2 rounded-sm font-bold">
-                             Địa điểm
-                        </div>
-                        
-                            <div class="flex items-start gap-3">
-                                <i class="fa-solid fa-location-dot text-vnpcRed mt-1 flex-shrink-0"></i>
-                                <span>Tầng 5, 70 Phạm Ngọc Thạch, phường Xuân Hoà, TP. Hồ Chí Minh
-                                +84904754197</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Nút đăng ký -->
-                    <button class="bg-blue-600 hover:bg-blue-700 transition-colors text-white px-8 py-3 rounded-sm flex items-center gap-2 font-bold mt-6">
-                        ĐĂNG KÝ NGAY
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </button>
-                </div>            <
-                    </div>
-
-                    <!-- QR Code -->
-                    <div class="absolute left-10 bottom-5 bg-white p-2 shadow-lg">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Chấm chỉ slide -->
-        <div class="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-30">
-            <div class="w-2 h-2 bg-vnpcRed rounded-full"></div>
-            <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
-            <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
-            <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
-            <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
-            <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
-            <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
-            <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
-            <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
-        </div>
-
     </section>
+
+    <!-- CHƯƠNG TRÌNH -->
+    <section id="chuong-trinh">
+        <h2 class="bg-white border-l-4 border-blue-500 p-3 text-xl font-bold shadow mb-4">
+            Chương trình du học
+        </h2>
+
+        <ul class="list-disc pl-6 space-y-2 text-gray-700">
+            <li>Du học tiếng Nhật</li>
+            <li>Du học đại học</li>
+            <li>Học bổng hỗ trợ</li>
+            <li>Định hướng nghề nghiệp</li>
+        </ul>
+
+        <div class="flex justify-center mt-6">
+            <img src="Tv06.png" class="w-[350px] h-[500px] object-cover rounded shadow">
+        </div>
+    </section>
+
+    <!-- LIÊN HỆ -->
+    <section id="lien-he">
+        <h2 class="bg-white border-l-4 border-green-500 p-3 text-xl font-bold shadow mb-4">
+            Liên hệ
+        </h2>
+
+        <div class="bg-white p-5 rounded shadow space-y-2 text-gray-700">
+            <p>📞 +84 904 754 197</p>
+            <p>✉️ dungwakaba@gmail.com</p>
+            <p>📍 70 Phạm Ngọc Thạch, TP.HCM</p>
+        </div>
+    </section>
+
+    <!-- HÌNH ẢNH / PDF -->
+    <section id="hinh-anh">
+        <h2 class="bg-white border-l-4 border-purple-500 p-3 text-xl font-bold shadow mb-4">
+            Tài liệu
+        </h2>
+
+        <a href="giaychungnhan.pdf" target="_blank" class="text-blue-600 underline">
+            Xem giấy chứng nhận (PDF)
         </a>
-    </div>
+
+        <div class="mt-4 flex justify-center">
+            <iframe src="giaychungnhan.pdf" class="w-full max-w-[600px] h-[400px] border"></iframe>
+        </div>
+    </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-black text-white text-center py-4 mt-10">
+    <p>&copy; 2026 Wakaba</p>
+</footer>
+
 </body>
 </html>
-</head>
-<body>
-  <header>
-   
-  </header>
-
-  <nav>
-    <a href="#gioi-thieu">Giới thiệu</a>
-    <a href="#chuong-trinh">Chương trình</a>
-    <a href="#lien-he">Liên hệ</a>
-    <a href="#hinh-anh">Hình ảnh</a>
-  </nav>
-
-<section id="gioi-thieu">
-  <h2>Giới thiệu</h2>
-  <p>
-    Wakaba là trung tâm tư vấn du học Nhật Bản uy tín, giúp học sinh và sinh viên Việt Nam tiếp cận nền giáo dục hiện đại, cơ hội nghề nghiệp rộng mở và trải nghiệm văn hóa đặc sắc.
-  </p>
-
-  <div class="gioi-thieu-imgs">
-    <figure>
-      <img src="TV03.jpg" alt="Hình ảnh giới thiệu 1" class="gioi-thieu-img img-gt01">
-      <figcaption>Hoạt động tư vấn du học tại Wakaba</figcaption>
-    </figure>
-
-    <figure>
-      <img src="TV04.png" alt="Hình ảnh giới thiệu 2" class="gioi-thieu-img img-gt02">
-      <figcaption>Tất cả các học bổng </figcaption>
-    </figure>
-  </div>
-</section>
-
-<style>
-  .gioi-thieu-imgs {
-  display: flex;
-  flex-direction: column; /* sắp xếp theo cột thay vì hàng */
-  align-items: center;    /* căn giữa theo chiều ngang */
-    gap: 15px;
-    margin-top: 20px;
-  }
-
-  figure {
-    text-align: center;
-  }
-
-  /* Kích thước mặc định */
-  .gioi-thieu-img {
-    border-radius: 8px;
-    height: auto;
-    transition: transform 0.3s ease;
-  }
-
-  /* Chỉnh riêng từng hình */
-  .img-gt01 {
-    width: 500px;   /* Hình 1 nhỏ gọn hơn */
-  }
-
-  .img-gt02 {
-    width: 800px;   /* Hình 2 bằng kích thước hình 1 */
-  }
-
-  figcaption {
-    margin-top: 8px;
-    font-size: 14px;
-    color: #555;
-  }
-
-  .gioi-thieu-img:hover {
-    transform: scale(1.1);
-  }
-</style>
-
-
-<section id="chuong-trinh" class="programs">
-  <h2>Chương trình du học</h2>
-  <ul>
-    <li>Du học tiếng Nhật ngắn hạn</li>
-    <li>Du học đại học và sau đại học</li>
-    <li>Chương trình học bổng hỗ trợ tài chính</li>
-      <figure>
-      <img src="Tv 05.png" alt="Hình ảnh giới thiệu 2" class="gioi-thieu-img img-gt02">
-      <figcaption>Tất cả các học bổng </figcaption>
-    </figure>
-  </div>
-    <li>Tư vấn định hướng nghề nghiệp tại Nhật Bản</li>
-  </ul>
-
-  <!-- Hình ảnh dưới phần chương trình -->
-  <div class="chuong-trinh-imgs">
-    <img src="Tv06.png" alt="Hình ảnh chương trình du học" class="chuong-trinh-img">
-  </div>
-</section>
-
-<style>
-  .chuong-trinh-imgs {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-
-  .chuong-trinh-img {
-    width: 420px;   /* Chiều ngang khổ A5 */
-    height: 595px;  /* Chiều cao khổ A5 */
-    object-fit: cover; /* Giữ tỷ lệ, cắt nếu cần */
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  }
-</style>
-
-
-  <section id="lien-he" class="contact">
-  <h3>Liên hệ với chúng tôi</h3>
-  <p><strong>📞 Điện thoại:</strong> +84 904 754 197</p>
-  <p><strong>✉️ Email:</strong> dungwakaba@gmail.com</p>
-  <p><strong>📍 Địa chỉ:</strong> Tầng 5, 70 Phạm Ngọc Thạch, phường Xuân Hoà, TP. Hồ Chí Minh</p>
-</section>
-
-<style>
-  .contact {
-    border: 2px solid #4CAF50;   /* khung viền màu xanh */
-    border-radius: 8px;          /* bo góc mềm mại */
-    padding: 20px;               /* khoảng cách bên trong */
-    max-width: 700px;            /* giới hạn chiều rộng */
-    margin: 30px auto;           /* căn giữa khối */
-    background-color: #f9f9f9;   /* nền sáng nhẹ */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* đổ bóng */
-    font-family: Arial, sans-serif;
-  }
-
-  .contact h3 {
-    margin-bottom: 15px;
-    color: #333;
-  }
-
-  .contact p {
-    margin: 8px 0;
-    color: #555;
-  }
-</style>
-
-
-  <footer>
-    <p>&copy; 2026 Du học Nhật Bản Wakaba. All rights reserved.</p>
-  </footer>
-</body>
-</html>
-<section id="#hinh-anh" clas="pictures">
-<a href="giaychungnhan.pdf" target="_blank">
-    Xem Giấy chứng nhận đăng ký doanh nghiệp (PDF)
-</a>
-</html>
-<iframe src="giaychungnhan.pdf" width="800" height="600"></iframe>
-
