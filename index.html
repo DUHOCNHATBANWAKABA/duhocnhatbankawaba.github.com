@@ -120,16 +120,35 @@
   
   <!-- Thêm hình ảnh minh họa -->
   <div class="gioi-thieu-imgs">
-  .gioi-thieu-img {
-  width: 20%;        /* Chiếm 20% chiều ngang khung chứa */
-  max-width: 200px;  /* Không vượt quá 200px */
-  height: auto;
-}
+  <section id="gioi-thieu">
+  <h2>Giới thiệu</h2>
+  <p>
+    Wakaba là trung tâm tư vấn du học Nhật Bản uy tín, giúp học sinh và sinh viên Việt Nam tiếp cận nền giáo dục hiện đại, cơ hội nghề nghiệp rộng mở và trải nghiệm văn hóa đặc sắc.
+  </p>
+
+  <div class="gioi-thieu-imgs">
     <img src="gt01.png" alt="Hình ảnh giới thiệu 1" class="gioi-thieu-img">
     <img src="gt02.png" alt="Hình ảnh giới thiệu 2" class="gioi-thieu-img">
     <img src="images/gioi-thieu.jpg" alt="Hình ảnh giới thiệu 3" class="gioi-thieu-img">
   </div>
 </section>
+
+<style>
+  .gioi-thieu-imgs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .gioi-thieu-img {
+    width: 20%;        /* Chiếm 20% chiều ngang khung chứa */
+    max-width: 200px;  /* Không vượt quá 200px */
+    height: auto;      /* Giữ tỷ lệ gốc */
+    border-radius: 8px;
+  }
+</style>
+
 
   <section id="chuong-trinh" class="programs">
     <h2>Chương trình du học</h2>
